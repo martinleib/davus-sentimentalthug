@@ -1,13 +1,13 @@
 <div>
-    <a href="#" class="btn btn-dark mb-2">
+    <a href="https://spotify.com" target="_blank" class="btn btn-dark mb-2">
         <i class="fa-brands fa-spotify"></i> PRE-GUARDAR EN SPOTIFY</a
     >
     <br />
-    <a href="#" class="btn btn-dark mb-2"
+    <a href="https://music.apple.com" target="_blank" class="btn btn-dark mb-2"
         ><i class="fa-brands fa-apple"></i> PRE-GUARDAR EN APPLE MUSIC</a
     >
     <br />
-    <a href="#" class="btn btn-dark mb-2"
+    <a href="https://youtube.com" target="_blank" class="btn btn-dark mb-2"
         ><i class="fa-brands fa-youtube"></i> PRE-GUARDAR EN YOUTUBE</a
     >
 </div>
