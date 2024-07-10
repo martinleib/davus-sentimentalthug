@@ -1,6 +1,7 @@
 <script>
+    import { onMount } from "svelte";
     import music from "../assets/background.mp3";
-
+    
     const playMusic = () => {
         const audio = document.querySelector("audio");
         audio.play();
@@ -10,6 +11,10 @@
         const audio = document.querySelector("audio");
         audio.pause();
     };
+
+    onMount(() => {
+        playMusic();
+    });
 </script>
 
 <audio>

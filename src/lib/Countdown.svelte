@@ -1,5 +1,5 @@
 <script>
-    import { onMount, onDestroy } from "svelte";
+    import { onMount } from "svelte";
 
     let countdownDate = new Date("Aug 15, 2024 19:37:00").getTime();
     let days, hours, minutes, seconds;

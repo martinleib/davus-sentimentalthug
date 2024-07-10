@@ -61,6 +61,12 @@
         -webkit-filter: blur(10px);
     }
 
+    .tracklist {
+        -webkit-user-select: none; /* safari */
+        user-select: none !important;
+        cursor: default;
+    }
+
     .coverart {
         width: 45%;
     }
