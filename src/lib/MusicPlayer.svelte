@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import music from "../assets/background.mp3";
-    
+
     const playMusic = () => {
         const audio = document.querySelector("audio");
         audio.play();
@@ -32,13 +32,25 @@
 
 <style>
     .musicplayer {
+        z-index: 5;
         display: flex;
         position: fixed;
         bottom: 0;
         right: 0;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
         width: 100px;
         justify-content: center;
         background-color: #111;
-        border-radius: 5px;
+        border-radius: 50px;
+    }
+
+    i {
+        transition: 0.15s;
+    }
+
+    i:hover {
+        cursor: pointer;
+        color: rgb(195, 130, 238);
     }
 </style>
