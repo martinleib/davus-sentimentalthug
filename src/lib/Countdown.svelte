@@ -25,7 +25,7 @@
 </script>
 
 <div class="countdown">
-    <h2>{days}:{hours}:{minutes}:{seconds}</h2>
+    <h2><span class="blurDays">{days}</span>:{hours}:{minutes}:{seconds}</h2>
 </div>
 
 <style>
@@ -39,5 +39,16 @@
         h2 {
             font-size: 5rem !important;
         }
+    }
+
+    .countdown {
+        -webkit-user-select: none; /* safari */
+        user-select: none !important;
+        cursor: default;
+    }
+
+    .blurDays {
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
     }
 </style>

@@ -1,5 +1,4 @@
 <script>
-    import { onMount } from "svelte";
     import music from "../assets/background.mp3";
 
     const playMusic = () => {
@@ -11,17 +10,13 @@
         const audio = document.querySelector("audio");
         audio.pause();
     };
-
-    onMount(() => {
-        playMusic();
-    });
 </script>
 
 <audio>
     <source src={music} type="audio/mpeg" />
 </audio>
 
-<div class="musicplayer">
+<div class="musicplayer d-none d-md-flex">
     <button on:click={playMusic} class="btn btn-dark btn-play">
         <i class="fa-solid fa-play"></i>
     </button>
@@ -32,7 +27,7 @@
 
 <style>
     .musicplayer {
-        z-index: 5;
+        z-index: 10;
         display: flex;
         position: fixed;
         bottom: 0;
@@ -41,10 +36,13 @@
         margin-bottom: 1rem;
         width: 100px;
         justify-content: center;
-        background-color: #111;
+        background-color: #222;
         border-radius: 50px;
     }
 
+    .btn-dark {
+        background-color: #222 !important;
+    }
     i {
         transition: 0.15s;
     }

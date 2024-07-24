@@ -25,34 +25,69 @@
     ];
 
     import cover from "../assets/cover.jpeg";
+    import logo from "../assets/sentimental-logo-1.jpeg"
+    import logo2 from "../assets/sentimental-logo-2.jpeg"
 </script>
 
-<main class="text-center">
-    <figure class="figure pt-4 mb-0 pb-4">
-        <img
-            src={cover}
-            alt="Cover art de Sentimental Thug"
-            class="figure-img img-fluid coverart"
-        />
-    </figure>
+<main class="text-center mt-4 container">
+    <div class="row m-auto">
+        <div class="col-12 col-md-4">
+            <figure class="figure pt-4 mb-0 pb-4">
+                <img
+                    src={cover}
+                    alt="Cover art de Sentimental Thug"
+                    class="figure-img img-fluid coverart"
+                    draggable="false"
+                />
+            </figure>
+        </div>
+        <div class="col-6 col-md-4">
+            <figure class="figure pt-4 mb-0 pb-4">
+                <img
+                    src={logo}
+                    alt="Logo de Sentimental Thug"
+                    class="figure-img img-fluid coverart"
+                    draggable="false"
+                />
+            </figure>
+        </div>
+        <div class="col-6 col-md-4">
+            <figure class="figure pt-4 mb-0 pb-4">
+                <img
+                    src={logo2}
+                    alt="Logo de Sentimental Thug"
+                    class="figure-img img-fluid coverart"
+                    draggable="false"
+                />
+            </figure>
+        </div>
+    </div>
 
+    <!--
     <div class="countdown-wrapper pb-4">
         <Countdown />
     </div>
+    -->
 
-    {#each tracklist as track}
-        <div class="tracklist text-uppercase">
-            <h5 class="trackname">
-                0{track.id}.
-                {track.artists} -
-                <span class="blurred-text">{track.title}</span>
-            </h5>
-        </div>
-    {/each}
-
-    <div class="links-wrapper pt-4 pb-4">
-        <Links />
+    <div class="coming-soon-wrapper pt-4 pb-4">
+        <h1>COMING SOON</h1>
     </div>
+
+    <div class="pt-4">
+        {#each tracklist as track}
+            <div class="tracklist text-uppercase">
+                <h5 class="trackname fs-6 blurred-text">
+                    0{track.id}.
+                    {track.artists} -
+                    {track.title}
+                    <!-- <span class="blurred-text">{track.title}</span> -->
+                </h5>
+            </div>
+        {/each}
+    </div>
+    <!-- <div class="links-wrapper pt-4 pb-4">
+        <Links />
+    </div> -->
 </main>
 
 <style>
@@ -68,6 +103,17 @@
     }
 
     .coverart {
-        width: 45%;
+        width: 300px
+    }
+
+    figure {
+        filter: blur(15px);
+        -webkit-filter: blur(15px);
+    }
+
+    img {
+        -webkit-user-select: none;
+        user-select: none !important;
+        cursor: default;
     }
 </style>

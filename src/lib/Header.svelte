@@ -1,4 +1,4 @@
-<a
+<!-- <a
     href="https://github.com/martinleib/davus-sentimentalthug"
     target="_blank"
     class="github-corner"
@@ -23,7 +23,7 @@
             class="octo-body"
         ></path>
     </svg>
-</a>
+</a> -->
 
 <header class="text-center pt-4 pb-4">
     <h1 class="text-uppercase fs-4 mb-0">Davus</h1>
