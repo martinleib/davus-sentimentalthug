@@ -35,7 +35,7 @@
         background-color: #0000005b;
     }
 
-    .github-corner:hover .octo-arm {
+    /* .github-corner:hover .octo-arm {
         animation: octocat-wave 560ms ease-in-out;
     }
     @keyframes octocat-wave {
@@ -69,5 +69,5 @@
         .github-corner {
             display: block;
         }
-    }
+    } */
 </style>

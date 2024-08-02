@@ -31,7 +31,7 @@
 
 <main class="text-center mt-4 container">
     <div class="row m-auto">
-        <div class="col-12 col-md-4">
+        <div class="col-12">
             <figure class="figure pt-4 mb-0 pb-4">
                 <img
                     src={cover}
@@ -41,7 +41,7 @@
                 />
             </figure>
         </div>
-        <div class="col-6 col-md-4">
+        <!-- <div class="col-6 col-md-4">
             <figure class="figure pt-4 mb-0 pb-4">
                 <img
                     src={logo}
@@ -60,18 +60,16 @@
                     draggable="false"
                 />
             </figure>
-        </div>
+        </div> -->
     </div>
 
-    <!--
-    <div class="countdown-wrapper pb-4">
+    <div class="countdown-wrapper pt-3 pb-3">
         <Countdown />
     </div>
-    -->
 
-    <div class="coming-soon-wrapper pt-4 pb-4">
+    <!-- <div class="coming-soon-wrapper pt-4 pb-4">
         <h1>COMING SOON</h1>
-    </div>
+    </div> -->
 
     <div class="pt-4">
         {#each tracklist as track}
@@ -85,9 +83,9 @@
             </div>
         {/each}
     </div>
-    <!-- <div class="links-wrapper pt-4 pb-4">
+    <div class="links-wrapper pt-4 pb-4">
         <Links />
-    </div> -->
+    </div>
 </main>
 
 <style>

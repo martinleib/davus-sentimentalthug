@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
 
-    let countdownDate = new Date("Aug 15, 2024 19:37:00").getTime();
+    let countdownDate = new Date("Aug 16, 2024 00:00:00").getTime();
     let days, hours, minutes, seconds;
 
     function updateCountdown() {
@@ -25,7 +25,7 @@
 </script>
 
 <div class="countdown">
-    <h2><span class="blurDays">{days}</span>:{hours}:{minutes}:{seconds}</h2>
+    <h2>{days}:{hours}:{minutes}:{seconds}</h2>
 </div>
 
 <style>
