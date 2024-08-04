@@ -16,14 +16,18 @@
     <source src={music} type="audio/mpeg" />
 </audio>
 
-<div class="musicplayer d-none d-md-flex">
-    <button on:click={playMusic} class="btn btn-dark btn-play">
-        <i class="fa-solid fa-play"></i>
-    </button>
-    <button on:click={stopMusic} class="btn btn-dark btn-stop">
-        <i class="fa-solid fa-stop"></i>
-    </button>
-</div>
+<menu class="musicplayer d-none d-md-flex">
+    <li>
+        <button on:click={playMusic} class="btn btn-dark btn-play">
+            <i class="fa-solid fa-play"></i>
+        </button>
+    </li>
+    <li>
+        <button on:click={stopMusic} class="btn btn-dark btn-stop">
+            <i class="fa-solid fa-stop"></i>
+        </button>
+    </li>
+</menu>
 
 <style>
     .musicplayer {
@@ -50,5 +54,14 @@
     i:hover {
         cursor: pointer;
         color: rgb(195, 130, 238);
+    }
+
+    menu {
+        list-style-type: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-inline-start: 0;
     }
 </style>

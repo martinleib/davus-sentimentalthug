@@ -48,7 +48,7 @@
 <style>
     @media (max-width: 767px) {
         h2 {
-            font-size: 2rem !important;
+            font-size: 3rem !important;
         }
     }
 

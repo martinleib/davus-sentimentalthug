@@ -18,26 +18,20 @@
 </script>
 
 <main class="text-center mt-4 container">
-    <div class="row m-auto">
-        <div class="col-12">
-            <div class="img-container">
-                <figure class="figure pt-4 mb-0 pb-4">
-                    <img
-                        src={cover}
-                        alt="Cover art de Sentimental Thug"
-                        class="figure-img img-fluid coverart"
-                        draggable="false"
-                    />
-                </figure>
-            </div>
-        </div>
-    </div>
+    <figure class="figure pt-4 mb-0 pb-4">
+        <img
+            src={cover}
+            alt="Cover art de Sentimental Thug"
+            class="figure-img img-fluid coverart"
+            draggable="false"
+        />
+    </figure>
 
-    <div class="countdown-wrapper pt-3 pb-3">
+    <time class="countdown-wrapper pt-3 pb-3">
         <Countdown />
-    </div>
+    </time>
     
-    <div class="pt-4">
+    <section class="pt-4 px-2">
         {#each tracklist as track}
             <div class="tracklist">
                 <div class="svelte-track-group mb-3">
@@ -51,10 +45,11 @@
                 </div>
             </div>
         {/each}
-    </div>
-    <div class="links-wrapper pt-4 pb-4">
+    </section>
+
+    <section class="links-wrapper pt-4 pb-4">
         <Links />
-    </div>
+    </section>
 </main>
 
 <style>
