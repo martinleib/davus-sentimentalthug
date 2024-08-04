@@ -10,3 +10,7 @@
 .bg-gray {
     background-color: #B49CC0;
 }
+
+.davus-accent-color {
+    color: rgb(195, 130, 238) !important;
+}

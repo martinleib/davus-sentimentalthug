@@ -17,8 +17,7 @@
     <a
     href="https://www.youtube.com/playlist?list=OLAK5uy_ktdqC8-_LsknAoBE4EXbH9pMXHfVjtlEE"
     target="_blank"
-    class="btn btn-dark mb-2"
-    ><i class="fa-brands fa-youtube"></i> PRE-GUARDAR EN YOUTUBE</a
+    class="btn btn-dark mb-2"><i class="fa-brands fa-youtube"></i> PRE-GUARDAR EN YOUTUBE</a
     >
     <br />
     <a

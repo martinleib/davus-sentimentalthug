@@ -32,14 +32,16 @@
 <main class="text-center mt-4 container">
     <div class="row m-auto">
         <div class="col-12">
-            <figure class="figure pt-4 mb-0 pb-4">
-                <img
-                    src={cover}
-                    alt="Cover art de Sentimental Thug"
-                    class="figure-img img-fluid coverart"
-                    draggable="false"
-                />
-            </figure>
+            <div class="img-container">
+                <figure class="figure pt-4 mb-0 pb-4">
+                    <img
+                        src={cover}
+                        alt="Cover art de Sentimental Thug"
+                        class="figure-img img-fluid coverart"
+                        draggable="false"
+                    />
+                </figure>
+            </div>
         </div>
         <!-- <div class="col-6 col-md-4">
             <figure class="figure pt-4 mb-0 pb-4">
@@ -77,10 +79,10 @@
                 <div class="svelte-track-group mb-3">
                     <h5 class="trackname fs-6 mb-0 text-uppercase">
                         0{track.id}.
-                        {track.artists} - {track.title}
+                        <span class="davus-accent-color">{track.artists}</span> - {track.title}
                     </h5>
                     {#if track.feat}
-                        <p class="fs-6 m-0"><em>ft. {track.feat}</em></p>
+                        <p class="fs-6 m-0"><em>ft. <span class="davus-accent-color">{track.feat}</span></em></p>
                     {/if}
                 </div>
             </div>
@@ -93,6 +95,8 @@
 
 <style>
     .coverart {
-        width: 300px
+        width: 300px;
+        position: relative;
+        z-index: 1;
     }
 </style>
