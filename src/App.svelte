@@ -7,7 +7,6 @@
 </script>
 
 <Header />
-<Banner />
 <Content />
 <MusicPlayer />
 <Footer />

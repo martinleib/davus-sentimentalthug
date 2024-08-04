@@ -31,10 +31,6 @@
 </header>
 
 <style>
-    header {
-        background-color: #0000005b;
-    }
-
     /* .github-corner:hover .octo-arm {
         animation: octocat-wave 560ms ease-in-out;
     }

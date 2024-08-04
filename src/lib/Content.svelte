@@ -15,18 +15,18 @@
     };
 
     let tracklist = [
-        { id: 1, artists: "Davus", title: createRandomTitle() },
-        { id: 2, artists: "Davus", title: createRandomTitle() },
-        { id: 3, artists: "Davus", title: createRandomTitle() },
-        { id: 4, artists: "Davus", title: createRandomTitle() },
-        { id: 5, artists: "Davus", title: createRandomTitle() },
-        { id: 6, artists: "Davus", title: createRandomTitle() },
-        { id: 7, artists: "Davus", title: createRandomTitle() },
+        { id: 1, artists: "Davus", title: "CAE LA NOCHE", feat: "LESTON"},
+        { id: 2, artists: "Davus", title: "NO HABLES MÁS", feat: "LESTON"},
+        { id: 3, artists: "Davus", title: "TODO POR NOSOTROS", feat: "WAVE"},
+        { id: 4, artists: "Davus", title: "NO PUEDO CREER" },
+        { id: 5, artists: "Davus", title: "CARTA A TU NOVIA" },
+        { id: 6, artists: "Davus", title: "BLANCO" },
+        { id: 7, artists: "Davus", title: "UN PAR DE SECUENCIAS" },
+        { id: 8, artists: "Davus", title: "ASTUCIA", feat: "ZOE"},
+        { id: 9, artists: "Davus", title: "CREO QUE NO" }
     ];
 
     import cover from "../assets/cover.jpeg";
-    import logo from "../assets/sentimental-logo-1.jpeg"
-    import logo2 from "../assets/sentimental-logo-2.jpeg"
 </script>
 
 <main class="text-center mt-4 container">
@@ -73,13 +73,16 @@
 
     <div class="pt-4">
         {#each tracklist as track}
-            <div class="tracklist text-uppercase">
-                <h5 class="trackname fs-6 blurred-text">
-                    0{track.id}.
-                    {track.artists} -
-                    {track.title}
-                    <!-- <span class="blurred-text">{track.title}</span> -->
-                </h5>
+            <div class="tracklist">
+                <div class="svelte-track-group mb-3">
+                    <h5 class="trackname fs-6 mb-0 text-uppercase">
+                        0{track.id}.
+                        {track.artists} - {track.title}
+                    </h5>
+                    {#if track.feat}
+                        <p class="fs-6 m-0"><em>ft. {track.feat}</em></p>
+                    {/if}
+                </div>
             </div>
         {/each}
     </div>
@@ -89,29 +92,7 @@
 </main>
 
 <style>
-    .blurred-text {
-        filter: blur(10px);
-        -webkit-filter: blur(10px);
-    }
-
-    .tracklist {
-        -webkit-user-select: none; /* safari */
-        user-select: none !important;
-        cursor: default;
-    }
-
     .coverart {
         width: 300px
-    }
-
-    figure {
-        filter: blur(15px);
-        -webkit-filter: blur(15px);
-    }
-
-    img {
-        -webkit-user-select: none;
-        user-select: none !important;
-        cursor: default;
     }
 </style>

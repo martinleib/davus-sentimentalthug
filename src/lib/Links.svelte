@@ -44,7 +44,7 @@
 
     @media (min-width: 1440px) {
         .btn {
-            width: 20%;
+            width: 30%;
         }
     }
 
