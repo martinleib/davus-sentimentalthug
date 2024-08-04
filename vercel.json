@@ -1,17 +1,17 @@
 {
     "redirects": [
         {
-            "source": "/twitter/",
+            "source": "/twitter",
             "destination": "https://twitter.com/davusito",
             "permanent": true
         },
         {
-            "source": "/instagram/",
+            "source": "/instagram",
             "destination": "https://instagram.com/davusito",
             "permanent": true
         },
         {
-            "source": "/youtube/",
+            "source": "/youtube",
             "destination": "https://youtube.com/davusito",
             "permanent": true
         }
