@@ -2,18 +2,6 @@
     import Countdown from "./Countdown.svelte";
     import Links from "./Links.svelte";
 
-    const createRandomTitle = () => {
-        const characters = "abcdefghijklmnopqrstuvwxyz0123456789";
-        let result = "";
-
-        for (let i = 0; i < 8; i++) {
-            const randomInd = Math.floor(Math.random() * characters.length);
-            result += characters[randomInd];
-        }
-
-        return `${result}`;
-    };
-
     let tracklist = [
         { id: 1, artists: "Davus", title: "CAE LA NOCHE", feat: "LESTON"},
         { id: 2, artists: "Davus", title: "NO HABLES MÁS", feat: "LESTON"},
@@ -43,36 +31,12 @@
                 </figure>
             </div>
         </div>
-        <!-- <div class="col-6 col-md-4">
-            <figure class="figure pt-4 mb-0 pb-4">
-                <img
-                    src={logo}
-                    alt="Logo de Sentimental Thug"
-                    class="figure-img img-fluid coverart"
-                    draggable="false"
-                />
-            </figure>
-        </div>
-        <div class="col-6 col-md-4">
-            <figure class="figure pt-4 mb-0 pb-4">
-                <img
-                    src={logo2}
-                    alt="Logo de Sentimental Thug"
-                    class="figure-img img-fluid coverart"
-                    draggable="false"
-                />
-            </figure>
-        </div> -->
     </div>
 
     <div class="countdown-wrapper pt-3 pb-3">
         <Countdown />
     </div>
-
-    <!-- <div class="coming-soon-wrapper pt-4 pb-4">
-        <h1>COMING SOON</h1>
-    </div> -->
-
+    
     <div class="pt-4">
         {#each tracklist as track}
             <div class="tracklist">
