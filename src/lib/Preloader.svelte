@@ -1,7 +1,5 @@
 <script>
     import { onMount } from 'svelte';
-    export let duration = 3500;
-    export let fadeDuration = 500;
 
     let showPreloader = true;
     let fadeOut = false;
